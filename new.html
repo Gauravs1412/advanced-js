@@ -1,0 +1,37 @@
+<htm>
+    <head>
+
+    </head>
+
+    <body>
+
+    <script>
+
+    let getA = a => a
+    console.log(getA(5))
+    //when parameter is 1 and return value is also 1 liner you can write the arrow function like this
+
+    let square = (b) => {
+        return b*b
+
+    }
+
+    console.log(square(4))
+
+    let mult =(a,b) => {
+        return a*b
+    }
+
+    console.log(mult(2,4))
+
+    var x = function(){
+        this.val = 1;
+        setTimeout(function(){
+            this.val++;
+            console.log(this.val)
+        }, 1)
+    }
+    x()
+    </script>
+    </body>
+</htm>

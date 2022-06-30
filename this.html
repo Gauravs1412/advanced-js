@@ -1,0 +1,36 @@
+<html>
+
+    <head>
+        <title>my page</title>
+    </head>
+
+    <body>
+        <script>
+            this.table = "window table"
+            console.log(window.table)
+            //so here this is reffering to global scope and it is also window object so we can 
+            // access it with the window.
+
+            this.garage = {
+                table : "garage table",   // this is also created in global scope and we can again
+                                         // access it with the help of this because we are inside of 
+                CleanTable() {           //our global scope
+                   console.log(`cleaning ${this.table}`)
+                }   
+                
+            }
+
+            let johnRoom = {
+                table:"johnTable",
+                CleanTable(){
+                    console.log(`cleaning ${this.table}`)
+                }
+            }
+
+            johnRoom.CleanTable();
+            this.garage.CleanTable()
+        </script>
+    </body>
+
+
+</html>
